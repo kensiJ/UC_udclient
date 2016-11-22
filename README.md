@@ -8,7 +8,7 @@ Usage
 ---
 ```python
 class { 'udclient': }
-
+```
 Installs the udclient Command-line client (CLI).
 It used default parameters, see parameters below.
 
