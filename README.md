@@ -19,7 +19,7 @@ Default value: `destination_dir	= '/usr/local'`
 
 Other examples
 ---
-`class { 'udclient':
-    udclient_zip		  => 'udclient.zip',
+```class { 'udclient':
+    udclient_zip      => 'udclient.zip',
     destination_dir   => '/usr/local',
-}`
+}```
