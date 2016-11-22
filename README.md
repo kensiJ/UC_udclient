@@ -6,7 +6,9 @@ This installation For RedHat OS only.
 
 Usage
 ---
-`class { 'udclient': }`
+```python
+class { 'udclient': }
+
 Installs the udclient Command-line client (CLI).
 It used default parameters, see parameters below.
 
