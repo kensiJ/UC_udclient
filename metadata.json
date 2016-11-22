@@ -1,0 +1,16 @@
+{
+  "name": "olgaj-udclient",
+  "version": "0.1.0",
+  "author": "OlgaJdanov",
+  "summary": "Module installs UrbanCode udclient based on provided parameters.",
+  "description": "Module installs UrbanCode udclient based on provided parameters.",
+  "license": "Apache 2.0",
+  "source": "git://github.com/kensiJ/UC_udclient.git",
+  "project_page": "http://github.com/kensiJ/UC_udclient",
+  "project_page": null,
+  "issues_url": null,
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
