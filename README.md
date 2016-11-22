@@ -10,12 +10,11 @@ Usage
 class { 'udclient': }
 ```
 Installs the udclient Command-line client (CLI).
-
 It used default parameters, see parameters below.
 
 Parameters
 ---
-**udclient:[udclient_zip]** - udclient zip to be installed, you can create it by urself if you need other UrbanCode Version
+**udclient:[udclient_zip]** - udclient zip to be installed, you can create it by urself if you need other UrbanCode Version  
 Default value: `udclient_zip = 'udclient.zip'`
 
 **udclient:[destination_dir]** - destination directory where udclient will be installed 
