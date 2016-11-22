@@ -31,19 +31,19 @@ class udclient(
 		
 		# Install zip/unzip
 		package { ['zip']:
-			ensure		=> present,
-			provider	=> 'yum',
+			ensure	=> present,
+			provider=> 'yum',
 		}
 		package { ['unzip']:
-			ensure		=> present,
-			provider	=> 'yum',
-		}
-		
-		file { "$destination_dir/udclient":
-			ensure		=> 'directory',
+			ensure	=> present,
+			provider=> 'yum',
 		}
 
 		if ! defined(file["$destination_dir/udclient"]) {
+		
+			file { "$destination_dir/udclient":
+				ensure	=> 'directory',
+			}
 		
 			# Copy the udclient zip 
 			file { "$destination_dir/$udclient_zip":
@@ -53,10 +53,10 @@ class udclient(
 		
 			# Extract the Wordpress bundle
 			exec { 'extract':
-				cwd			=> "$destination_dir",
-				path		=> "/usr/bin",
-				command		=> "unzip $destination_dir/$udclient_zip; rm -f $destination_dir/$udclient_zip",
-				require		=> File["$destination_dir/$udclient_zip"],
+				cwd	=> "$destination_dir",
+				path	=> "/usr/bin",
+				command	=> "unzip $destination_dir/$udclient_zip; rm -f $destination_dir/$udclient_zip",
+				require	=> File["$destination_dir/$udclient_zip"],
 			}
 		}
 		
