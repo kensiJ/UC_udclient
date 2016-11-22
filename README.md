@@ -3,5 +3,9 @@
 Description
 ---
 This installation For RedHat OS only.
-Usage
+
+**Usage**
 ---
+'class { 'udclient': }'
+Installs the udclient Command-line client (CLI).
+It used default parameters, see parameters below.
